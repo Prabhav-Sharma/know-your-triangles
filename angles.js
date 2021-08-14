@@ -13,7 +13,7 @@ var checkType = addElement("#check-type");
 function isTriangle(one, two, three) {
     var sum = one + two + three;
     if (sum === 180) {
-        checkOutput.innerText = "That your Grace is a....triangle!"
+        checkOutput.innerText = "That your Grace is a....Triangle!"
         if (one === 90 || two === 90 || three === 90) {
             checkType.innerText = "Type:  Right-Angled Triangle ⊿"
         } else if (one < 90 && two < 90 && three < 90) {
@@ -23,6 +23,7 @@ function isTriangle(one, two, three) {
         }
     } else {
         checkOutput.innerText = "I'm afraid but this does not resemble a triangle at all. Maybe an avocado 🥑?"
+        checkType.innerText ="";
     }
 }
 
@@ -31,6 +32,13 @@ btnCheck.addEventListener("click", function check() {
     var angleTwo = parseInt(angleTwoInput.value);
     var angleThree = parseInt(angleThreeInput.value)
 
-    isTriangle(angleOne, angleTwo, angleThree);
+    if(isNaN(angleOne) || isNaN(angleTwo) || isNaN(angleThree)){
+        checkOutput.innerText = "I'm gonna need those values we talked about to make this work.";
+        checkType.innerText = "";
+    }else{
+        isTriangle(angleOne, angleTwo, angleThree);
+    }
+
+   
 
 })
