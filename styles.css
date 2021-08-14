@@ -7,7 +7,7 @@
 
 body {
     background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: 'Noto Serif', serif;
 }
 
@@ -67,7 +67,7 @@ body {
     font-size: x-large;
 }
 
-#btn-check {
+.btn-check {
     margin: auto;
     text-align: center;
     padding: 5px;
@@ -82,7 +82,7 @@ body {
 
 }
 
-#btn-check:hover {
+.btn-check:hover {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
@@ -107,3 +107,35 @@ body {
     color: black;
     text-align: center;
 }
+
+.area-sections{
+    min-height: 100vh;
+}
+
+.link-list{
+    list-style: none;
+    text-align: center;
+}
+
+.link-list li{
+    margin:auto;
+    margin-top: 45px;
+    padding: 10px;
+    background-color: #4B5563;
+    width: 250px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+.link-list li:hover, .link-list li a:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.link-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+  

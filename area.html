@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area | Triangles</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    
+    <section class="area-sections">
+        <h1 class="hero-heading"> Let's talk about what information you can give me 🕵️</h1>
+        <div>
+            <h2 class="hero-heading">Calculate Area of triangle by using: </h2>
+            <ul class="link-list">
+                <li><a href="#link-base-height"> Base & Height </a> </li>
+                <li><a href="#three-sides">Side Lengths </a> </li>
+                <li><a href="#equilateral">One Side of an Equilateral Triangle </a> </li>
+                <li><a href="#trigonometry"> Trigonometry </a> </li>
+            </ul>
+        </div>
+    </section>
+    <section class="area-sections">
+        <a name="link-base-height"></a>
+        <h1 class="hero-heading">Enter the Base and Height</h1>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">1<sup>st</sup> = </h3><input class="input-angles" id="input-base"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">2<sup>nd</sup> = </h3><input class="input-angles" id="input-height"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input"> <button class="btn-check" id="btn-base-height">Calculate</button></div>
+        <h2 class="hero-heading" id="output-base-height"></h2>
+        <h3 class="hero-heading"> Formula Used=> Area = 1/2 x Base x Height</h3>
+    </section>
+
+
+
+    <section class="area-sections">
+        <a name="three-sides"></a>
+        <h1 class="hero-heading">Enter the three sides</h1>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">1<sup>st</sup> = </h3><input class="input-angles" id="side-one"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">2<sup>nd</sup> = </h3><input class="input-angles" id="side-two"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">3<sup>rd</sup> = </h3><input class="input-angles" id="side-three"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input"> <button class="btn-check" id="btn-three-sides">Calculate</button></div>
+        <h2 class="hero-heading" id="output-three-sides"></h2>
+        <h3 class="hero-heading"> Formula Used=> Heron's Formula, s(semiperimeter) = 1/2 (sum of three sides[a,b,c])
+            <br> =>
+            Area<sup>2</sup>= s(s-a)(s-b)(s-c) </h3>
+    </section>
+
+
+
+    <section class="area-sections">
+        <a name="equilateral"></a>
+        <h1 class="hero-heading"> Enter the length of the side of the equilateral triangle </h1>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">Side Length = </h3><input class="input-angles" id="equilateral-side"
+                type="number"></input>
+            <div class="container-angles-input"> <button class="btn-check" id="btn-equilateral">Calculate</button></div>
+            <h2 class="hero-heading" id="output-equilateral"></h2>
+            <h3 class="hero-heading"> Formula Used=> Area = side<sup>2</sup> (√3/4) </h3>
+    </section>
+
+    <section class="area-sections">
+        <a name="trigonometry"></a>
+        <h1 class="hero-heading"> Enter two adjacent sides and the included angle </h1>
+        <h3 class="hero-heading">Trivia: Adjacent sides are two sides of a triangle that meet at a vertex. The included
+            angle is the angle
+            between these two sides.</h3>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">1<sup>st</sup> side = </h3><input class="input-angles" id="trigo-side-one"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">2<sup>nd</sup> side = </h3><input class="input-angles" id="trigo-side-two"
+                type="number"></input>
+        </div>
+        <div class="container-angles-input">
+            <h3 class="angles-input-heading">Angle = </h3><input class="input-angles" id="trigo-angle"
+                type="number"></input>
+            <div class="container-angles-input"> <button class="btn-check" id="btn-trigo">Calculate</button></div>
+            <h2 class="hero-heading" id="output-trigo"></h2>
+            <h3 class="hero-heading"> Formula Used=> Area = product of adjacent sides x sin (angle) </h3>
+    </section>
+<script src="area.js" type="text/javascript"></script>
 </body>
+
 </html>
