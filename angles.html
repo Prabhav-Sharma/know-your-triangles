@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angles | Triangles</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
 
-    <h1 class="hero-heading">Enter three angles 📐 and I'll tell you if it forms a triangle!</h1>
+    <h1 class="hero-heading">Enter three angles 📐 and we'll tell you if it forms a triangle!</h1>
+    <div class="container-angles-input">
+        <h3 class="angles-input-heading">1<sup>st</sup> = </h3><input class="input-angles" id="angle-one"
+            type="number"></input>
+    </div>
+    <div class="container-angles-input">
+        <h3 class="angles-input-heading">2<sup>nd</sup> = </h3><input class="input-angles" id="angle-two"
+            type="number"></input>
+    </div>
+    <div class="container-angles-input">
+        <h3 class="angles-input-heading">3<sup>rd</sup> = </h3><input class="input-angles" id="angle-three"
+            type="number"></input>
+    </div>
+    <div class="container-angles-input"> <button id="btn-check">Check</button></div>
+    <h2 class="output-angles" id="check-output"></h2>
+    <h3 class="output-angles" id="check-type"></h3>
+
+
+
+    <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>

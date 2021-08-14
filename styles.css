@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
 
 
-:root{
+:root {
     --primary-color: #14B8A6;
 }
 
-body{
+body {
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     font-family: 'Noto Serif', serif;
@@ -14,12 +14,12 @@ body{
 
 
 
-.link-first{
-    padding:1rem;
+.link-first {
+    padding: 1rem;
     display: inline-block;
     width: 85px;
     height: 85px;
-    margin:auto;
+    margin: auto;
     text-align: center;
     vertical-align: middle;
     margin-top: 10px;
@@ -31,23 +31,74 @@ body{
     color: white;
 }
 
-.foremost-layer{
-display: block;
-margin:auto;
-text-align: center;
+.foremost-layer {
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
-.container{
+.container {
     text-align: center;
     margin: auto;
 }
-.hero-heading{
-    color:white;
+
+.hero-heading {
+    color: white;
     text-align: center;
 }
 
-.hero-image{
+.hero-image {
     height: 280px;
     width: auto;
 
+}
+
+.container-angles-input {
+    text-align: center;
+    display: block;
+
+
+}
+
+.angles-input-heading {
+    display: inline-block;
+    color: black;
+    margin-right: 10px;
+    font-size: x-large;
+}
+
+#btn-check {
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    width: 120px;
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 14pt;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+
+}
+
+#btn-check:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+.output-angles {
+    text-align: center;
+    color: white;
+
+
+}
+
+.input-angles {
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px black;
 }
