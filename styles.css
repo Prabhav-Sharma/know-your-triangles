@@ -26,16 +26,36 @@ body {
     margin-right: 10px;
     border: 1px solid black;
     text-decoration: none;
-    padding-top: 1.2rem;
+    padding-top: 1.8rem;
     background-color: var(--primary-color);
     color: white;
 }
+
+.left-top:hover{
+    box-shadow: -5px -5px 5px black;
+}
+
+.left-bottom:hover{
+    box-shadow: -5px 5px 5px black;
+}
+
+.right-top:hover{
+    box-shadow: 5px -5px 5px black;
+    
+}
+
+.right-bottom:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+
 
 .foremost-layer {
     display: block;
     margin: auto;
     text-align: center;
 }
+
 
 .container {
     text-align: center;
@@ -136,6 +156,28 @@ body {
 .link-list li a{
     text-decoration: none;
     color: white;
+}
+
+.quiz-list{
+    text-align: center;
+    margin:auto;
+    list-style: none;
+}
+
+.quiz-item{
+    text-align: justify;
+    padding:5px;
+    padding-top: 2px;
+    width: 50%;
+    margin:auto;
+    margin-top: 2rem;
+    background-color: #F3F4F6;
+    color:var(--primary-color);
+
+}
+
+.quiz-item input:hover{
+cursor: pointer;
 }
 
   
