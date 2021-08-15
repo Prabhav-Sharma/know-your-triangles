@@ -14,6 +14,7 @@ body {
 
 
 
+
 .link-first {
     padding: 1rem;
     display: inline-block;
@@ -173,6 +174,7 @@ body {
     margin-top: 2rem;
     background-color: #F3F4F6;
     color:var(--primary-color);
+    opacity: 95%;
 
 }
 
@@ -180,4 +182,61 @@ body {
 cursor: pointer;
 }
 
-  
+
+.header{
+    min-width: max-content;
+    height: 100px;
+    background-color:#22D3EE;
+    border-radius: 50px;
+    padding: 20px;
+    margin-top: -8px;
+    margin-left: -8px;
+    box-shadow: 5px 5px 5px black;
+    opacity: 90%;
+}
+
+.header h2{
+    text-align: left;
+}
+
+.header-link{
+    text-decoration: none;
+    color:white;
+    text-align: right;
+    float: right;
+    margin: 1rem;
+    margin-bottom: 15;
+    font-size: large;
+
+}
+
+.highlight{
+    color: black;
+
+}
+
+.refer-links{
+    height: 50px;
+    width: 75px;
+}
+
+  aside{
+    width: min-content; 
+    height:fit-content; 
+    background: #22D3EE;
+     float:left;
+     display: block;
+     margin:auto;
+  margin-top: 40vh;
+  margin-left: -10px;
+  opacity: 80%;
+  }
+
+  .linkedIN{
+      width: 75px;
+      height:60px;
+  }
+
+  .index-section{
+   margin-right: 6rem;
+  }
