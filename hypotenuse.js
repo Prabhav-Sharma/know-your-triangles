@@ -1,30 +1,29 @@
-function addElement(id) {
-    return document.querySelector(id);
-}
+//ES6 Version Code
+const addElement = id => document.querySelector(id);
 
 
-var inputSideOne = addElement("#side-one");
-var inputSideTwo = addElement("#side-two");
-var btnCheck = addElement("#btn-check");
-var outputStat = addElement("#check-output");
+const inputSideOne = addElement("#side-one");
+const inputSideTwo = addElement("#side-two");
+const btnCheck = addElement("#btn-check");
+const outputStat = addElement("#check-output");
 
-function calcHypotenuse(one, two){
-    var hypotenuse = Math.sqrt(one * one  + two * two);
+const calcHypotenuse = (one, two)=> {
+    let hypotenuse = Math.sqrt(one * one  + two * two);
      
-    outputStat.innerText = "Hypotenuse lenght: " + hypotenuse + " units";
+    outputStat.innerText = `Hypotenuse lenght: ${hypotenuse} units`;
 }
 
 
-btnCheck.addEventListener("click", function checkHandler(){
+btnCheck.addEventListener("click", _=>{
 
-var sideOne = parseInt(inputSideOne.value);
-var sideTwo = parseInt(inputSideTwo.value);
+let sideOne = parseInt(inputSideOne.value);
+let sideTwo = parseInt(inputSideTwo.value);
 if(isNaN(sideOne) || isNaN(sideTwo)){
-    outputStat.innerText= "I need the two sides on my desk ASAP Potter!"
+    outputStat.innerText= "I need the two sides on my desk ASAP Parker!"
 }else{
     calcHypotenuse(sideOne, sideTwo);
 }
 
-})
+});
 
 

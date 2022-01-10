@@ -1,17 +1,16 @@
-function addElement(id) {
-    return document.querySelector(id);
-}
+//ES6 Version Code
+const addElement = id => document.querySelector(id);
 
-var angleOneInput = addElement("#angle-one");
-var angleTwoInput = addElement("#angle-two");
-var angleThreeInput = addElement("#angle-three");
-var btnCheck = addElement("#btn-check");
-var checkOutput = addElement("#check-output");
-var checkType = addElement("#check-type");
+const angleOneInput = addElement("#angle-one");
+const angleTwoInput = addElement("#angle-two");
+const angleThreeInput = addElement("#angle-three");
+const btnCheck = addElement("#btn-check");
+const checkOutput = addElement("#check-output");
+const checkType = addElement("#check-type");
 
 
-function isTriangle(one, two, three) {
-    var sum = one + two + three;
+const isTriangle =(one, two, three) => {
+    let sum = one + two + three;
     if (sum === 180) {
         checkOutput.innerText = "That your Grace is a....Triangle!"
         if (one === 90 || two === 90 || three === 90) {
@@ -27,10 +26,10 @@ function isTriangle(one, two, three) {
     }
 }
 
-btnCheck.addEventListener("click", function check() {
-    var angleOne = parseInt(angleOneInput.value);
-    var angleTwo = parseInt(angleTwoInput.value);
-    var angleThree = parseInt(angleThreeInput.value)
+btnCheck.addEventListener("click", _=> {
+    let angleOne = parseInt(angleOneInput.value);
+    let angleTwo = parseInt(angleTwoInput.value);
+    let angleThree = parseInt(angleThreeInput.value)
 
     if(isNaN(angleOne) || isNaN(angleTwo) || isNaN(angleThree)){
         checkOutput.innerText = "I'm gonna need those values we talked about to make this work.";
@@ -38,7 +37,4 @@ btnCheck.addEventListener("click", function check() {
     }else{
         isTriangle(angleOne, angleTwo, angleThree);
     }
-
-   
-
-})
+});
